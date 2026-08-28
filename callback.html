@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>認可コードを転送中... | AIサトミ運用ツール</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;max-width:520px;margin:80px auto;padding:0 20px;line-height:1.8;color:#222;text-align:center}
+a{color:#3987e5}
+</style>
+</head>
+<body>
+<p>認可コードを取得しています。自動的に転送されない場合は、下のリンクをクリックしてください。</p>
+<p><a id="link" href="#">ローカルアプリに戻る</a></p>
+<script>
+  var target = "http://localhost:8765/callback" + window.location.search;
+  document.getElementById("link").href = target;
+  window.location.replace(target);
+</script>
+</body>
+</html>
