@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TikTok for Business Authentication | AIサトミ運用ツール</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;max-width:520px;margin:80px auto;padding:0 20px;line-height:1.8;color:#222;text-align:center}
+a{color:#3987e5}
+</style>
+</head>
+<body>
+<p>TikTok Business authentication is being redirected to the local application.</p>
+<p><a id="link" href="#">Return to local application</a></p>
+<noscript><p>Please enable JavaScript, then return to the local application manually.</p></noscript>
+<script>
+  var target = "http://localhost:8765/business-callback" + window.location.search + window.location.hash;
+  document.getElementById("link").href = target;
+  window.location.replace(target);
+</script>
+</body>
+</html>
